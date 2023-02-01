@@ -1,0 +1,99 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.cabecalho{
+
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px ;
+    max-width: 1440px;
+    margin:auto;
+    width: 150vh;
+}
+.cabecalho .logo{
+    height: 100px;
+    width: 700px;
+    opacity: 30%;
+}
+.cabecalho .menu{
+    
+    display: flex;
+    align-items:baseline;
+    height: 100%;
+}
+.cabecalho nav li a {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+
+}
+.cabecalho nav li a:hover{
+    background-color: red;
+}
+.container {
+    max-width: 1444px;
+    margin:0 auto ;
+    display: flex;
+    align-items: center;
+    width: calc(100vh-132);
+    padding: 0 30px 30px;
+}
+.container .imagem-titulo {
+    
+    margin-left: 15px;
+    margin-top: 80px;
+
+}
+.container .descricao{
+    color: #a8add7;
+    width: 85%;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.container .slayer2{
+    max-width: 500px;
+    margin-top: -10%;
+}
+.container .botao-trailer{
+    background-color: red;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    transition: 0.5s all ease-in-out;
+}
+.container .botao-trailer:hover{
+    transform: scale(1.1);
+}
+.fundo-video{
+    
+    position: absolute;
+    z-index:-1 ;
+    width: 100vw;
+    height: 100vh;
+}
+.fundo-video .video{
+    height: 100vh;
+}
+.fundo-video::after {
+    content:"";
+    background-color: red;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top:0;
+    left:0;
+
+
+
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 1%, rgba(0,0,0,0.8) 30%, rgba(0,0,0,1) 95%, rgba(0,0,0,1) 99%);
+}
